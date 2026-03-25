@@ -27,6 +27,34 @@ To write a Python program that uses multilevel inheritance to get and display a 
 
 ## Program
 Add code here
+```
+class Grandchild(Child):
+    def __init__(self, name, age, location):
+        super().__init__(name, age)
+        self.location = location
+
+    def getLocation(self):
+        return self.location
+
+
+# User input
+name = input("Enter name: ")
+age = int(input("Enter age: "))
+location = input("Enter location: ")
+
+# Create object
+obj = Grandchild(name, age, location)
+
+# Display output
+print("\n--- Person Details ---")
+print("Name:", obj.getName())
+print("Age:", obj.getAge())
+print("Location:", obj.getLocation())
+```
+
 
 ## Sample Output
+
+<img width="580" height="496" alt="image" src="https://github.com/user-attachments/assets/22f49b17-640d-444a-a7d3-5e006ab59db7" />
+
 
